@@ -1,6 +1,8 @@
 package serviceAPI;
 
 
+import java.util.ArrayList;
+
 /**
  * Created by phujcn on 22/05/2016.
  */
@@ -9,14 +11,14 @@ package serviceAPI;
 
 public class Status {
     private final long id;
-    private final String status;
+    private final ArrayList<String> status;
 
-    public Status(long id,String status) {
+    public Status(long id,ArrayList<String> status) {
         this.id = id;
         this.status=status;
     }
 
-    public String getStatus() {
+    public ArrayList<String> getStatus() {
         return status;
     }
     public long getId(){
