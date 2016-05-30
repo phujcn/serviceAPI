@@ -11,14 +11,14 @@ import java.util.ArrayList;
 
 public class Status {
     private final long id;
-    private final ArrayList<String> status;
+    private final ArrayList<Service> status;
 
-    public Status(long id,ArrayList<String> status) {
+    public Status(long id,ArrayList<Service> status) {
         this.id = id;
         this.status=status;
     }
 
-    public ArrayList<String> getStatus() {
+    public ArrayList<Service> getStatus() {
         return status;
     }
     public long getId(){
